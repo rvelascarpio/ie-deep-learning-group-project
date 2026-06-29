@@ -1,0 +1,19 @@
+ABLATION LADDER
+ECG_Only................. AUC: 0.9225 (95% CI: 0.9109–0.9335) | Sens: 0.8500 | Spec: 0.8540
+Metadata_Only............ AUC: 0.7820 (95% CI: 0.7621–0.8026) | Sens: 0.8510 | Spec: 0.5340
+Report_Only.............. AUC: 0.9121 (95% CI: 0.8981–0.9262) | Sens: 0.8510 | Spec: 0.8740
+M1_Safe.................. AUC: 0.9244 (95% CI: 0.9124–0.9356) | Sens: 0.8500 | Spec: 0.8450
+M3_Axis.................. AUC: 0.9240 (95% CI: 0.9114–0.9352) | Sens: 0.8500 | Spec: 0.8450
+M4_Noise................. AUC: 0.9239 (95% CI: 0.9114–0.9352) | Sens: 0.8520 | Spec: 0.8410
+M5_Missing............... AUC: 0.9230 (95% CI: 0.9103–0.9345) | Sens: 0.8520 | Spec: 0.8440
+M6_Validated............. AUC: 0.9231 (95% CI: 0.9104–0.9345) | Sens: 0.8500 | Spec: 0.8470
+M7_Report................ AUC: 0.9565 (95% CI: 0.9482–0.9650) | Sens: 0.8500 | Spec: 0.9320
+M6_NegativeControl....... AUC: 0.9223 (95% CI: 0.9094–0.9338) | Sens: 0.8500 | Spec: 0.8420
+
+PERMUTATIONS
+Shuffled demographic.... AUC: 0.9104 (Drop: +0.0126)
+Shuffled axis........... AUC: 0.9092 (Drop: +0.0139)
+Shuffled noise.......... AUC: 0.9233 (Drop: -0.0003)
+Shuffled missing........ AUC: 0.9230 (Drop: +0.0000)
+Shuffled validated...... AUC: 0.9228 (Drop: +0.0003)
+Shuffled workflow_flags. AUC: 0.9236 (Drop: -0.0005)

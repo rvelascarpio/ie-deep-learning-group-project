@@ -1,0 +1,7 @@
+Multi-Label OOF Results (5 Diagnostic Superclasses)
+===================================================
+[NORM] OOF ROC-AUC: 0.9407 | PR-AUC: 0.9479
+[MI] OOF ROC-AUC: 0.9310 | PR-AUC: 0.7121
+[STTC] OOF ROC-AUC: 0.9205 | PR-AUC: 0.7231
+[CD] OOF ROC-AUC: 0.9360 | PR-AUC: 0.8380
+[HYP] OOF ROC-AUC: 0.7959 | PR-AUC: 0.2754
