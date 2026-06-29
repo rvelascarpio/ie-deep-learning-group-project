@@ -2,6 +2,8 @@
 
 Deep Learning Final Project · IE University
 
+**🔴 Live demo:** **[ie-deep-learning-group-project.streamlit.app](https://ie-deep-learning-group-project-2qvda3umchrhynwuuhhgbg.streamlit.app/)** — the CardioAI™ dashboard, deployed on Streamlit Cloud and running live inference (no setup required).
+
 This repository contains the codebase for an automated ECG prescreening pipeline. The project is built entirely on raw 1D physiological signals and clinical metadata, avoiding visual shortcut confounds.
 
 The repository maintains two distinct, complementary pipelines:
@@ -119,7 +121,6 @@ The repository implements three distinct model architectures:
 
 - A 5-class multi-label extension capable of predicting NORM, MI, STTC, CD, and HYP simultaneously using `binary_crossentropy` and sigmoid activation, built entirely on patient-disjoint metadata. It outputs individual probability predictions for each of the five cardiac superclasses, allowing for the detection of co-occurring pathologies.
 
-
 ---
 
 ## 📊 Key Performance Metrics (5-Fold Stratified Cross-Validation)
@@ -221,14 +222,6 @@ This extension pivots from a binary abnormal/normal framework into a multi-label
 <br>
 ![Permutation Importance](reports/figures/permutation_test_chart.png)
 
-
-
-
-
-http://localhost:8501
-
-
-
 ---
 
 ## 📱 FVJ CardioAI™ MVP Triage & Diagnostic Product
@@ -246,11 +239,12 @@ The **FVJ CardioAI™ MVP** is a clinical decision-support application built usi
   ```bash
   streamlit run src/streamlit_dashboard/app.py
   ```
+* **Live Demo (Streamlit Cloud):** [ie-deep-learning-group-project.streamlit.app](https://ie-deep-learning-group-project-2qvda3umchrhynwuuhhgbg.streamlit.app/)
 * **Local Web Address:** [http://localhost:8501](http://localhost:8501)
-* **GitHub Repository URL:** [https://github.com/Pipe10101/deep-learning-project](https://github.com/Pipe10101/deep-learning-project)
+* **GitHub Repository URL:** [https://github.com/rvelascarpio/ie-deep-learning-group-project](https://github.com/rvelascarpio/ie-deep-learning-group-project)
 
 > [!TIP]
-> **Live Local URL:** Once the server is running, the CardioAI™ dashboard is accessible at [http://localhost:8501](http://localhost:8501).
+> **Live Demo:** The deployed dashboard is publicly accessible at **[ie-deep-learning-group-project.streamlit.app](https://ie-deep-learning-group-project-2qvda3umchrhynwuuhhgbg.streamlit.app/)** — no setup required. Running locally, it's served at [http://localhost:8501](http://localhost:8501).
 
 ![FVJ Health-Tech MVP Dashboard UI](src/streamlit_dashboard/assets/inference_completed.png)
 
@@ -292,6 +286,8 @@ python src/data_processing/build_demo_cohort.py --src data/raw # rebuild the uns
 
 ### 4. Deploy to Streamlit Community Cloud
 
+> ✅ **Already live:** this repo is deployed from `main` at **[ie-deep-learning-group-project.streamlit.app](https://ie-deep-learning-group-project-2qvda3umchrhynwuuhhgbg.streamlit.app/)**. The steps below reproduce that deployment.
+
 1. Push this repo to GitHub. The demo data is committed; the large `data/Imagenes eco/` source pool is git‑ignored.
 2. On [share.streamlit.io](https://share.streamlit.io) → **New app**, select the repo, set **Main file path** to `src/streamlit_dashboard/app.py`.
 3. In **Advanced settings**, set **Python version → 3.11** (required for TensorFlow 2.16.1).
@@ -317,5 +313,7 @@ python src/data_processing/build_demo_cohort.py --src data/raw # rebuild the uns
 
 ## 👥 Contributors
 
+* **[Jan Wejchert](https://github.com/janwejchert)**
 * **[Pipe10101](https://github.com/Pipe10101)**
 * **[Vlad494-cmd](https://github.com/Vlad494-cmd)**
+* **[ricardo-velasquez](https://github.com/rvelascarpio)**
